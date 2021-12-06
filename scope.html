@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+	<meta charset="UTF-8">
+	<title>scope/ functies</title>	
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+	<script type="text/javascript">
+		//bij ES5 wordt er 'var' gebruikt : variabelen blijft alleen bestaan in die functie 
+		//bij ES6 wordt er 'let' gebruikt: is een global scope
+		function mijnFunctie() {
+		    var naam = 'Luke'
+		    console.log(naam); // 'Luke'
+		}
+
+		mijnFunctie();
+		//uit de functie mag je wel dezelfde var of let gebruiken
+		console.log(naam); // naam is not defined
+
+		
+	</script>
+</body>
+</html>
